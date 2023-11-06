@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    android:clickable="true">
+
+    <!-- TextView Pertama (Judul) -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="233dp"
+        android:layout_height="99dp"
+        android:padding="15dp"
+        android:text="Depresso Squad"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:background="@drawable/nama_bulat"
+        android:layout_centerHorizontal="true" />
+
+    <!-- ImageView (Gambar) -->
+    <FrameLayout
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-13dp"
+        android:background="@drawable/pop_up_bulat">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/depresso" />
+    </FrameLayout>
+
+
+    <!-- TextView Kedua (Deskripsi) -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/nama_bulat"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="22dp"
+        android:paddingVertical="26dp"
+        android:text="Depresso Squad adalah tim pengembangan Fishio yang mengambil nama dari “Depresi” yang menggambarkan kesehatan mental  karena tugas yang mengalir tanpa henti dan “Espresso” yang menggambarkan minuman kafein yang sering dikonsumsi oleh tim pengembang."
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:gravity="end|start"
+        tools:ignore="TextSizeCheck" />
+
+</RelativeLayout>
