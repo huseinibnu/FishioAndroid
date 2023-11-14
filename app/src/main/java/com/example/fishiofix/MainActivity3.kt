@@ -2,6 +2,7 @@ package com.example.fishiofix
 
 import android.annotation.SuppressLint
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -29,11 +30,22 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
 
+        // Bagian username
         val username = intent.getStringExtra("username") // Menerima data username
 
         val textView = findViewById<TextView>(R.id.textView)
         textView.text = "Selamat Datang, $username" // Mengganti teks berdasarkan username
 
+        // Bagian Card View
+        val cardView1 = findViewById<CardView>(R.id.cardView1)
+
+        cardView1.setOnClickListener {
+            // Intent untuk mengarahkan ke Activity4
+            val intent = Intent(this, MainActivity4::class.java)
+            startActivity(intent)
+        }
+
+        // Bagian pop up
         val imageView1 = findViewById<ImageView>(R.id.gambar1)
         val imageView2 = findViewById<ImageView>(R.id.gambar2)
 
@@ -44,6 +56,7 @@ class MainActivity3 : AppCompatActivity() {
         imageView2.setOnClickListener {
             showCustomDialogBox2()
         }
+
     }
 
     private fun showCustomDialogBox1() {
