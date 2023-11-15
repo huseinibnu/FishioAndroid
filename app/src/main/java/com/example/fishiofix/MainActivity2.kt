@@ -16,12 +16,13 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+        var username = ""
 
         etUsername = findViewById(R.id.editText)
         btnValidasi = findViewById(R.id.appCompatButton)
 
         btnValidasi.setOnClickListener {
-            val username = etUsername.text.toString().trim()
+            username = etUsername.text.toString().trim()
 
             if (username.isEmpty()) {
                 etUsername.error = "masukkan nama kamu dulu!"

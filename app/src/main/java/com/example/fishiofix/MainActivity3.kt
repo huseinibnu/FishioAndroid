@@ -22,6 +22,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
+import android.content.Intent
 
 class MainActivity3 : AppCompatActivity() {
 
@@ -43,6 +44,28 @@ class MainActivity3 : AppCompatActivity() {
 
         imageView2.setOnClickListener {
             showCustomDialogBox2()
+        }
+
+        val cardView1 = findViewById<CardView>(R.id.cardView1)
+        val cardView2 = findViewById<CardView>(R.id.cardView2)
+        val cardView3 = findViewById<CardView>(R.id.cardView3)
+
+        cardView1.setOnClickListener {
+            val pindahIntent = Intent(this, MataActivity::class.java)
+            startActivity(pindahIntent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        }
+
+        cardView2.setOnClickListener {
+            val pindahIntent = Intent(this, MataInsangActivity::class.java)
+            startActivity(pindahIntent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        }
+
+        cardView3.setOnClickListener {
+            val pindahIntent = Intent(this, InsangActivity::class.java)
+            startActivity(pindahIntent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }
 

@@ -96,7 +96,8 @@ tools:context=".MainActivity3">
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="15dp">
+                app:cardCornerRadius="15dp"
+                android:id="@+id/cardView2">
 
                 <LinearLayout
                     android:layout_width="95dp"
@@ -132,7 +133,8 @@ tools:context=".MainActivity3">
                 android:layout_columnWeight="1"
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="15dp">
+                app:cardCornerRadius="15dp"
+                android:id="@+id/cardView3">
 
                 <LinearLayout
                     android:layout_width="95dp"
@@ -233,8 +235,7 @@ tools:context=".MainActivity3">
                 android:text="Hak Cipta © 2023 Depresso Squad"
                 android:textColor="@color/black"
                 android:textSize="15dp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold"/>
 
             <ImageView
                 android:layout_width="50dp"
