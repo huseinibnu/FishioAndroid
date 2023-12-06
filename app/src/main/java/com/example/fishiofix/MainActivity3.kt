@@ -30,22 +30,13 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
 
+        // Bagian username
         val username = intent.getStringExtra("username") // Menerima data username
 
         val textView = findViewById<TextView>(R.id.textView)
         textView.text = "Selamat Datang, $username" // Mengganti teks berdasarkan username
 
-        val imageView1 = findViewById<ImageView>(R.id.gambar1)
-        val imageView2 = findViewById<ImageView>(R.id.gambar2)
-
-        imageView1.setOnClickListener {
-            showCustomDialogBox1()
-        }
-
-        imageView2.setOnClickListener {
-            showCustomDialogBox2()
-        }
-
+        // Bagian card view
         val cardView1 = findViewById<CardView>(R.id.cardView1)
         val cardView2 = findViewById<CardView>(R.id.cardView2)
         val cardView3 = findViewById<CardView>(R.id.cardView3)
@@ -66,6 +57,18 @@ class MainActivity3 : AppCompatActivity() {
             val pindahIntent = Intent(this, InsangActivity::class.java)
             startActivity(pindahIntent)
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        }
+
+        // bagian image view
+        val imageView1 = findViewById<ImageView>(R.id.gambar1)
+        val imageView2 = findViewById<ImageView>(R.id.gambar2)
+
+        imageView1.setOnClickListener {
+            showCustomDialogBox1()
+        }
+
+        imageView2.setOnClickListener {
+            showCustomDialogBox2()
         }
     }
 

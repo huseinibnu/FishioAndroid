@@ -53,6 +53,13 @@ class MataActivity : AppCompatActivity() {
             Log.d("MyApp", "Menu Clicked")
             showBottomDialog()
         }
+
+        // Menampilkan layout kamera
+        val kamera = findViewById<ImageView>(R.id.kamera)
+
+        kamera.setOnClickListener() {
+            showCustomDialogBoxMata()
+        }
     }
 
     public fun showBottomDialog() {
@@ -157,6 +164,27 @@ class MataActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    private fun showCustomDialogBoxMata() {
+        val dialog = Dialog(this)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(true)
+        dialog.setContentView(R.layout.activity_kamera)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        // Menampilkan dialog
+        dialog.show()
+
+        // Menutup dialog saat mengklik di luar pop-up dan dalam pop-up
+        dialog.window?.decorView?.setOnTouchListener { _, event ->
+            if (event.action == android.view.MotionEvent.ACTION_DOWN) {
+                dialog.dismiss()
+                true
+            } else {
+                false
+            }
+        }
     }
 
 }

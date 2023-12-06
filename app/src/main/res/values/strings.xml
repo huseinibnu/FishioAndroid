@@ -45,4 +45,5 @@
     </string>
     <string name="title_activity_mata">MataActivity</string>
     <string name="title_activity_insang">InsangActivity</string>
+    <string name="title_activity_kamera">KameraActivity</string>
 </resources>
