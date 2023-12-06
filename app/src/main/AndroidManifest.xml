@@ -1,4 +1,5 @@
-<<<<<<< Original<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools">
 
 <application
@@ -43,20 +44,6 @@ xmlns:tools="http://schemas.android.com/tools">
     </activity>
     <!-- AndroidManifest.xml -->
 
-    <activity
-        android:name=".MataActivity"
-        android:theme="res/values/styles.xml" />
 
 </application>
-
-</manifest>=======
-
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-<application>
-    <activity
-        android:name="com.example.fishiofix.KameraActivity"
-        android:exported="false"
-        android:label="@string/title_activity_kamera"
-        android:theme="@style/Theme.FishioFix" />
-</application>
-</manifest>>>>>>>> Added
+</manifest>
