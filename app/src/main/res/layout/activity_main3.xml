@@ -179,7 +179,7 @@
         </TextView>
 
         <ImageView
-            android:layout_width="360dp"
+            android:layout_width="320dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:id="@+id/gambar1"
@@ -204,7 +204,7 @@
         </TextView>
 
         <ImageView
-            android:layout_width="360dp"
+            android:layout_width="320dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:id="@+id/gambar2"
@@ -231,7 +231,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppins_bold"
                 android:paddingTop="10dp"
-                android:paddingLeft="35dp"
+                android:paddingLeft="15dp"
                 android:text="Hak Cipta © 2023 Depresso Squad"
                 android:textColor="@color/black"
                 android:textSize="17dp"
