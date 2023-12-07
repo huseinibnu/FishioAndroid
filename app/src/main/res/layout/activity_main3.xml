@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/gradient_background"
-tools:context=".MainActivity3">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity3">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -179,7 +179,7 @@ tools:context=".MainActivity3">
         </TextView>
 
         <ImageView
-            android:layout_width="320dp"
+            android:layout_width="360dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:id="@+id/gambar1"
@@ -204,7 +204,7 @@ tools:context=".MainActivity3">
         </TextView>
 
         <ImageView
-            android:layout_width="320dp"
+            android:layout_width="360dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:id="@+id/gambar2"
@@ -234,7 +234,7 @@ tools:context=".MainActivity3">
                 android:paddingLeft="35dp"
                 android:text="Hak Cipta © 2023 Depresso Squad"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="17dp"
                 android:textStyle="bold"/>
 
             <ImageView

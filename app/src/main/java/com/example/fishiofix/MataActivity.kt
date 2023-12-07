@@ -2,15 +2,21 @@ package com.example.fishiofix
 
 import android.app.Dialog
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.Typeface
 import android.graphics.drawable.ColorDrawable
+import android.media.MediaScannerConnection
+import android.net.Uri
 import android.os.Bundle
+import android.os.Environment
+import android.provider.MediaStore
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.StyleSpan
 import android.util.Log
 import android.view.Gravity
+import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.ImageView
@@ -18,9 +24,13 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
 
 class MataActivity : AppCompatActivity() {
-
+    private lateinit var imageView: ImageView
+    private lateinit var bitmap: Bitmap
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mata_ikan)
@@ -58,7 +68,8 @@ class MataActivity : AppCompatActivity() {
         val kamera = findViewById<ImageView>(R.id.kamera)
 
         kamera.setOnClickListener() {
-            showCustomDialogBoxMata()
+            val intent = Intent(this, KameraActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -164,27 +175,6 @@ class MataActivity : AppCompatActivity() {
             }
         }
 
-    }
-
-    private fun showCustomDialogBoxMata() {
-        val dialog = Dialog(this)
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        dialog.setCancelable(true)
-        dialog.setContentView(R.layout.activity_kamera)
-        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-
-        // Menampilkan dialog
-        dialog.show()
-
-        // Menutup dialog saat mengklik di luar pop-up dan dalam pop-up
-        dialog.window?.decorView?.setOnTouchListener { _, event ->
-            if (event.action == android.view.MotionEvent.ACTION_DOWN) {
-                dialog.dismiss()
-                true
-            } else {
-                false
-            }
-        }
     }
 
 }
