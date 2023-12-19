@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Beranda"
+        android:icon="@drawable/beranda"
+        android:title="Beranda"
+        app:showAsAction="collapseActionView" />
+
+    <item android:id="@+id/MataIkan"
+        android:icon="@drawable/icon_mata_ikan"
+        android:title="Mata Ikan"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/InsangIkan"
+        android:icon="@drawable/icon_insang"
+        android:title="Insang Ikan"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/MataDanInsangIkan"
+        android:icon="@drawable/icon_mata_dan_insang"
+        android:title="Mata dan Insang Ikan"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/CiriIkanSegar"
+        android:icon="@drawable/beranda"
+        android:title="Ciri-Ciri Ikan Segar"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/TentangDepresso"
+        android:icon="@drawable/logo_depresso"
+        android:title="Tentang Depresso"
+        app:showAsAction="never"/>
+
+</menu>

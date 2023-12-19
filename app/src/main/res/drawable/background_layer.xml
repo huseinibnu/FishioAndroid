@@ -1,0 +1,16 @@
+<!-- res/drawable/background_layer.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#7CCCDD"
+                android:endColor="#339CCD"
+                android:angle="1"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/latar_belakang_bubble"
+        android:height="350dp">
+    </item>
+    <item android:drawable="@drawable/latar_belakang_karang"/>
+</layer-list>

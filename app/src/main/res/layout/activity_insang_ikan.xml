@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_layer">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/primary"
+        android:id="@+id/bagian1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@drawable/logo_fishio"
+            android:id="@+id/menu1">
+        </ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/baseline_menu_24"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/menu">
+        </ImageView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true">
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bagian1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unggah foto insang ikanmu!"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20dp"
+            android:background="@drawable/nama_bulat"
+            android:padding="15dp"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/unggah">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="322dp"
+            android:layout_height="322dp"
+            android:background="@drawable/nama_bulat"
+            android:layout_below="@id/unggah"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/icon_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="210dp"
+                android:fontFamily="@font/poppins_medium_italic"
+                android:text="kamu bisa foto atau unggah \ndari galerimu"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="35dp"
+            android:text="Hak Cipta © 2023 Depresso Squad"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_depresso"
+            android:layout_gravity="left">
+        </ImageView>
+    </GridLayout>
+
+
+</RelativeLayout>
